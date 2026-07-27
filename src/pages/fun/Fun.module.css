@@ -1,0 +1,20 @@
+.paragraph {
+  padding-top: 48px;
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(11, 11, 11, 0.75);
+}
+
+.photoGrid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+}

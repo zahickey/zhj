@@ -1,0 +1,47 @@
+.title {
+  font-size: clamp(56px, 11vw, 128px);
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: rgba(11, 11, 11, 0.6);
+}
+
+.intro {
+  margin-top: 24px;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(11, 11, 11, 0.75);
+}
+
+.grid {
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  display: block;
+}
+
+.cardTitle {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.cardBlurb {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(11, 11, 11, 0.65);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
