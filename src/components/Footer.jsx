@@ -16,6 +16,15 @@ function Footer() {
             <a href="mailto:zoe.hickey@gmail.com">Email</a>
           </li>
           <li>
+            <a
+              href="https://www.linkedin.com/in/zoe-hickey-ju%C3%A1rez/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
             <span className={styles.comingSoon}>GitHub — coming soon</span>
           </li>
           <li>
