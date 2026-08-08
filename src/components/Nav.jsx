@@ -11,6 +11,12 @@ const NAV_ITEMS = [
     ],
   },
   {
+    label: 'Projects',
+    children: [
+      { label: 'Senior Thesis', to: '/projects/senior-thesis' },
+    ],
+  },
+  {
     label: 'Algorithms Explained',
     children: [
       { label: 'Decision Making Algorithms', to: '/algorithms/decision-making' },

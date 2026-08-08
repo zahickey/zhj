@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Marquee from '../components/Marquee.jsx'
 import Placeholder from '../components/Placeholder.jsx'
+import profilePhoto from '../assets/images/profile_image.jpeg'
 import styles from './Home.module.css'
 
 const SECTIONS = [
@@ -31,18 +32,23 @@ function Home() {
             <span className="eyebrow">Welcome</span>
             <span className="eyebrow">Portfolio &amp; notes</span>
           </div>
-          <h1 className={`display ${styles.title}`}>Hi, I&rsquo;m Zoe</h1>
-          <p className={styles.subtitle}>
-            [ your tagline here — one line about what you do ]
-          </p>
-          <p className={styles.intro}>
-            [ Your bio intro goes here. A couple of sentences about who you are, what
-            you work on, and what this site is for. Replace this placeholder once
-            you&rsquo;ve got copy you like. ]
-          </p>
-          <Link to="/about/zoe" className="pill" style={{ marginTop: 28 }}>
-            More about me
-          </Link>
+          <div className={styles.heroRow}>
+            <div className={styles.heroText}>
+              <h1 className={`display ${styles.title}`}>Hi, I&rsquo;m Zoe</h1>
+              {/*<p className={styles.subtitle}>
+                Always excited to learn new things!
+              </p>*/}
+              <p className={styles.intro}>
+                Welcome to my personal website! I&rsquo;m a researcher who is always interested in learning new things!
+                I like making videos to explain concepts I enjoy and picking up new hobbies/ adventures.
+                This website is simply a collection of some of my favorite work, experiences and memories :)
+              </p>
+              <Link to="/about/zoe" className="pill" style={{ marginTop: 28 }}>
+                More about me
+              </Link>
+            </div>
+            <img src={profilePhoto} alt="Zoe" className={styles.photo} />
+          </div>
         </div>
       </section>
 

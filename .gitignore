@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Background reference material (not part of the site)
+reference/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

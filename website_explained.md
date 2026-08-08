@@ -51,6 +51,6 @@ it tells you where to make a given change instead of hunting through `src/`.
 ## Where to add real content
 
 - **Text**: search for square-bracket placeholders like `[ your bio goes here ]` in the files above and replace them.
-- **Photos**: put image files in `src/assets/`, `import` them in the relevant page, and replace the matching `<Placeholder />` with an `<img>`.
+- **Photos**: put image files in `src/assets/images/`, `import` them in the relevant page, and replace the matching `<Placeholder />` with an `<img>`.
 - **CV PDF**: drop the file in `public/`, then point the disabled pill in `about/CV.jsx` at it (`href="/your-cv.pdf"`) and remove the `pill--disabled` class.
 - **GitHub/YouTube links**: same pattern — replace the `<span className="pill pill--outline pill--disabled">` placeholders in `algorithms/AlgorithmPage.jsx` with real `<a>` links once those exist.

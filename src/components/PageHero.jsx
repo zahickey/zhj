@@ -5,7 +5,16 @@ import styles from './PageHero.module.css'
  * `tone` selects which gradient/band variant to use, `radius` matches
  * it to its position in the band stack (see global.css .band--* classes).
  */
-function PageHero({ eyebrow, title, subtitle, tone = 'mint', radius = 'top', children }) {
+function PageHero({
+  eyebrow,
+  title,
+  subtitle,
+  tone = 'mint',
+  radius = 'top',
+  titleStyle,
+  subtitleStyle,
+  children,
+}) {
   return (
     <section className={`band band--${radius} band--gradient-${tone} ${styles.hero}`}>
       <div className="container">
@@ -13,8 +22,10 @@ function PageHero({ eyebrow, title, subtitle, tone = 'mint', radius = 'top', chi
         <div className={styles.top}>
           {eyebrow && <span className="eyebrow">{eyebrow}</span>}
         </div>
-        <h1 className={`display ${styles.title}`}>{title}</h1>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        <h1 className={`display ${styles.title}`} style={titleStyle}>{title}</h1>
+        {subtitle && (
+          <p className={styles.subtitle} style={subtitleStyle}>{subtitle}</p>
+        )}
         {children}
       </div>
     </section>

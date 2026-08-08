@@ -1,0 +1,18 @@
+.linkRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.body {
+  padding-top: 48px;
+  max-width: 680px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(11, 11, 11, 0.75);
+  margin-bottom: 20px;
+}

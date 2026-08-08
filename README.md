@@ -17,7 +17,7 @@ Nav dropdowns and routes are defined in `src/components/Nav.jsx` and `src/App.js
 
 Search the codebase for square-bracket placeholders like `[ your bio goes here ]` and
 dashed `Placeholder` blocks (photo/figure slots) — replace them with real copy and
-images. Drop image files in `src/assets/` and `import` them into the relevant page.
+images. Drop image files in `src/assets/images/` and `import` them into the relevant page.
 
 The GitHub/YouTube links on the Algorithms pages and the CV download button are
 disabled placeholders — wire them up once those exist.
