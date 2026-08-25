@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import Zoe from './pages/about/Zoe.jsx'
 import CV from './pages/about/CV.jsx'
 import SeniorThesis from './pages/projects/SeniorThesis.jsx'
+import DnnLymphoma from './pages/projects/DnnLymphoma.jsx'
 import DecisionMaking from './pages/algorithms/DecisionMaking.jsx'
 import NeurIPS from './pages/algorithms/NeurIPS.jsx'
 import Other from './pages/algorithms/Other.jsx'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about/zoe" element={<Zoe />} />
         <Route path="/about/cv" element={<CV />} />
         <Route path="/projects/senior-thesis" element={<SeniorThesis />} />
+        <Route path="/projects/dnn-lymphoma" element={<DnnLymphoma />} />
         <Route path="/algorithms/decision-making" element={<DecisionMaking />} />
         <Route path="/algorithms/neurips" element={<NeurIPS />} />
         <Route path="/algorithms/other" element={<Other />} />

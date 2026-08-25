@@ -1,0 +1,197 @@
+.byline {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: rgba(11, 11, 11, 0.6);
+  margin-top: 18px;
+}
+
+.linkRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.article {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.tabBar {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  background: rgba(11, 11, 11, 0.05);
+  border-radius: 999px;
+  margin-bottom: 40px;
+}
+
+.tabButton {
+  border: none;
+  background: transparent;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(11, 11, 11, 0.55);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tabButton:hover {
+  color: var(--ink);
+}
+
+.tabButtonActive {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(11, 11, 11, 0.78);
+  margin-bottom: 18px;
+}
+
+.h2 {
+  font-size: clamp(24px, 3.6vw, 30px);
+  margin-top: 48px;
+  margin-bottom: 18px;
+}
+
+.h2:first-of-type {
+  margin-top: 0;
+}
+
+.calloutBox {
+  background: var(--cream);
+  border: 1px dashed rgba(11, 11, 11, 0.25);
+  border-radius: 18px;
+  padding: 24px 28px;
+  margin: 20px 0 32px;
+}
+
+.calloutLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(11, 11, 11, 0.5);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.calloutList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calloutList a {
+  font-size: 15px;
+  color: var(--coral-hover);
+  text-decoration: underline;
+  text-decoration-color: rgba(239, 149, 96, 0.4);
+}
+
+.calloutList a:hover {
+  text-decoration-color: currentColor;
+}
+
+.calloutMeta {
+  font-size: 13px;
+  color: rgba(11, 11, 11, 0.55);
+  margin-top: 2px;
+}
+
+.networkList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0 8px;
+}
+
+.networkItem {
+  display: flex;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.networkIndex {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: rgba(11, 11, 11, 0.4);
+  min-width: 22px;
+}
+
+.networkName {
+  font-weight: 600;
+  font-size: 15.5px;
+  margin-bottom: 4px;
+}
+
+.networkDesc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(11, 11, 11, 0.68);
+}
+
+.groupLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(11, 11, 11, 0.5);
+  margin: 28px 0 4px;
+}
+
+.citationList {
+  margin-top: 8px;
+}
+
+.citation {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(11, 11, 11, 0.75);
+}
+
+.citation:last-child {
+  border-bottom: none;
+}
+
+.citation a {
+  color: var(--coral-hover);
+  text-decoration: underline;
+  text-decoration-color: rgba(239, 149, 96, 0.4);
+}
+
+.citation a:hover {
+  text-decoration-color: currentColor;
+}
+
+.resultsBlock {
+  padding: 64px 0 32px;
+  text-align: center;
+}
+
+.resultsMessage {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(24px, 4vw, 36px);
+  margin-bottom: 28px;
+}
+
+@media (max-width: 720px) {
+  .calloutBox {
+    padding: 20px 20px;
+  }
+}
