@@ -8,7 +8,6 @@ function Footer() {
       <div className={`container ${styles.inner}`}>
         <div>
           <p className={`display ${styles.wordmark}`}>Zoe Hickey</p>
-          <p className={styles.tagline}>your tagline here</p>
         </div>
 
         <ul className={styles.links}>
@@ -23,9 +22,6 @@ function Footer() {
             >
               LinkedIn
             </a>
-          </li>
-          <li>
-            <span className={styles.comingSoon}>GitHub — coming soon</span>
           </li>
           <li>
             <span className={styles.comingSoon}>YouTube — coming soon</span>
