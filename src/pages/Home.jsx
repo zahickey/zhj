@@ -33,9 +33,19 @@ function Home() {
                 I like making videos to explain concepts I enjoy and picking up new hobbies/ adventures.
                 This website is simply a collection of some of my favorite work, experiences and memories :)
               </p>
-              <Link to="/about/zoe" className="pill" style={{ marginTop: 28 }}>
-                More about me
-              </Link>
+              <div style={{ display: 'flex', gap: 12, marginTop: 28 }}>
+                <Link to="/about/zoe" className="pill">
+                  More about me
+                </Link>
+                <a
+                  href="https://www.linkedin.com/in/zoe-hickey-ju%C3%A1rez/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="pill"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
             <img src={profilePhoto} alt="Zoe" className={styles.photo} />
           </div>
