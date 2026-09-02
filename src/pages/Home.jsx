@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Marquee from '../components/Marquee.jsx'
 import Placeholder from '../components/Placeholder.jsx'
 import profilePhoto from '../assets/images/profile_image.jpeg'
+import torresDelPaine from '../assets/images/torres-del-paine.jpg'
 import styles from './Home.module.css'
 
 const SECTIONS = [
@@ -9,6 +10,7 @@ const SECTIONS = [
     label: 'About',
     to: '/about/zoe',
     blurb: 'Who I am, and a CV if you want the formal version.',
+    image: torresDelPaine,
   },
 ]
 
@@ -59,7 +61,11 @@ function Home() {
           <div className={styles.grid}>
             {SECTIONS.map((s) => (
               <Link to={s.to} className={styles.card} key={s.label}>
-                <Placeholder label="Photo placeholder" />
+                {s.image ? (
+                  <img src={s.image} alt="" className={styles.cardPhoto} />
+                ) : (
+                  <Placeholder label="Photo placeholder" />
+                )}
                 <h3 className={`display ${styles.cardTitle}`}>{s.label}</h3>
                 <p className={styles.cardBlurb}>{s.blurb}</p>
               </Link>

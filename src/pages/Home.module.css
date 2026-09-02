@@ -61,6 +61,13 @@
   display: block;
 }
 
+.cardPhoto {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 .cardTitle {
   margin-top: 20px;
   font-size: 28px;
