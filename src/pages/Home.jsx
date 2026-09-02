@@ -9,7 +9,7 @@ const SECTIONS = [
   {
     label: 'About',
     to: '/about/zoe',
-    blurb: 'Who I am, and a CV if you want the formal version.',
+    blurb: 'An overview of my academic and work history.',
     image: torresDelPaine,
   },
 ]
