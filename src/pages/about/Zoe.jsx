@@ -55,7 +55,7 @@ function Zoe() {
                 loved that this combination let me work with real-world data and
                 think computationally about problems. A standout class was a graduate
                 Urban Economics course, where I analyzed gender pay gap patterns using
-                actual datasets. Senior year, I took &ldquo;AI for Social Good,&rdquo;
+                actual datasets. Senior year, I took &ldquo;AI for Sustainable Development,&rdquo;
                 which let me apply these concepts to real problems after studying
                 them mostly in theory. After graduation, I wanted to learn more about
                 applying computational methods to real-world data, so I moved to San
