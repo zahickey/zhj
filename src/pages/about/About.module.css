@@ -1,8 +1,5 @@
 .bioGrid {
   padding-top: 48px;
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 56px;
 }
 
 .heading {
@@ -16,27 +13,20 @@
   margin-bottom: 14px;
 }
 
+.highlight {
+  display: inline;
+  padding: 3px 8px;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 .paragraph {
   font-size: 16px;
   line-height: 1.7;
   color: rgba(11, 11, 11, 0.75);
   margin-bottom: 16px;
-  max-width: 560px;
-}
-
-.factList li {
-  font-size: 14px;
-  line-height: 1.8;
-  color: rgba(11, 11, 11, 0.7);
-  padding-left: 18px;
-  position: relative;
-}
-
-.factList li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  opacity: 0.5;
+  max-width: 960px;
 }
 
 .cvSection {
@@ -63,10 +53,6 @@
 }
 
 @media (max-width: 720px) {
-  .bioGrid {
-    grid-template-columns: 1fr;
-  }
-
   .cvRow {
     flex-direction: column;
     gap: 4px;

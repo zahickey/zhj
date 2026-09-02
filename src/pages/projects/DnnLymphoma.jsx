@@ -8,7 +8,7 @@ const GITHUB_URL = 'https://github.com/zahickey/dnn_lymphoma'
 const FUNDAMENTALS = [
   {
     name: 'Plain CNN encoder-decoder',
-    desc: 'Conv/pool down, conv/upsample back up — no skip connections. Baseline for seeing what skip connections actually buy you.',
+    desc: 'Conv/pool down, conv/upsample back up, no skip connections. Baseline for seeing what skip connections actually buy you.',
   },
   {
     name: '2D U-Net',
@@ -20,7 +20,7 @@ const FUNDAMENTALS = [
   },
   {
     name: 'Simple 3D U-Net',
-    desc: 'Same idea, extended to volumetric patches — where most of the paper’s networks actually operate.',
+    desc: 'Same idea, extended to volumetric patches, where most of the paper’s networks actually operate.',
   },
 ]
 
@@ -153,7 +153,7 @@ function DnnLymphoma() {
       <PageHero
         eyebrow="Projects"
         title="DNN for Lymphoma"
-        subtitle="Learning how neural networks work by implementing and training several architectures — from a plain CNN up to the ones used in the paper — to segment lymphoma lesions in whole-body PET/CT scans."
+        subtitle="Learning how neural networks work by implementing and training several architectures, from a plain CNN up to the ones used in the paper, to segment lymphoma lesions in whole-body PET/CT scans."
         tone="mint"
         radius="top"
       >

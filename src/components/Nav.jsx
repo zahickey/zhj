@@ -3,33 +3,16 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import styles from './Nav.module.css'
 
 const NAV_ITEMS = [
+  { label: 'Home', to: '/' },
   {
     label: 'About',
-    children: [
-      { label: 'Zoe', to: '/about/zoe' },
-      { label: 'CV', to: '/about/cv' },
-    ],
+    children: [{ label: 'Bio', to: '/about/zoe' }],
   },
   {
     label: 'Projects',
     children: [
       { label: 'Senior Thesis', to: '/projects/senior-thesis' },
       { label: 'DNN for Lymphoma', to: '/projects/dnn-lymphoma' },
-    ],
-  },
-  {
-    label: 'Algorithms Explained',
-    children: [
-      { label: 'Decision Making Algorithms', to: '/algorithms/decision-making' },
-      { label: 'NeurIPS', to: '/algorithms/neurips' },
-      { label: 'Other', to: '/algorithms/other' },
-    ],
-  },
-  {
-    label: 'Fun',
-    children: [
-      { label: 'Drive to Alaska', to: '/fun/alaska' },
-      { label: 'Yoga with Friends', to: '/fun/yoga' },
     ],
   },
 ]
@@ -75,7 +58,22 @@ function Nav() {
         </button>
 
         <nav className={`${styles.nav} ${mobileOpen ? styles.navOpen : ''}`}>
-          {NAV_ITEMS.map((item) => (
+          {NAV_ITEMS.map((item) =>
+            item.to ? (
+              <div className={styles.item} key={item.label}>
+                <NavLink
+                  to={item.to}
+                  end
+                  className={({ isActive }) =>
+                    `${styles.itemButton} ${styles.navLink} ${
+                      isActive ? styles.navLinkActive : ''
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </div>
+            ) : (
             <div className={styles.item} key={item.label}>
               <button
                 type="button"
@@ -108,7 +106,8 @@ function Nav() {
                 ))}
               </div>
             </div>
-          ))}
+            )
+          )}
         </nav>
       </div>
     </header>

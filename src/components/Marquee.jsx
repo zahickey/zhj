@@ -1,11 +1,4 @@
-const DEFAULT_ITEMS = [
-  'Decision Making',
-  'NeurIPS',
-  'Road Trips',
-  'Yoga',
-  'Algorithms',
-  'CV',
-]
+const DEFAULT_ITEMS = ['Research', 'Projects', 'Economics', 'AI']
 
 function Marquee({ items = DEFAULT_ITEMS }) {
   const doubled = [...items, ...items]

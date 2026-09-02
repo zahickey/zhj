@@ -10,16 +10,6 @@ const SECTIONS = [
     to: '/about/zoe',
     blurb: 'Who I am, and a CV if you want the formal version.',
   },
-  {
-    label: 'Algorithms Explained',
-    to: '/algorithms/decision-making',
-    blurb: 'Write-ups on decision making algorithms, NeurIPS work, and more.',
-  },
-  {
-    label: 'Fun',
-    to: '/fun/alaska',
-    blurb: 'A drive to Alaska, yoga with friends, and other things I like doing.',
-  },
 ]
 
 function Home() {

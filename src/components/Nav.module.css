@@ -49,6 +49,14 @@
   background: rgba(11, 11, 11, 0.06);
 }
 
+.navLink {
+  text-decoration: none;
+}
+
+.navLinkActive {
+  background: rgba(11, 11, 11, 0.06);
+}
+
 .caret {
   font-size: 10px;
   opacity: 0.6;

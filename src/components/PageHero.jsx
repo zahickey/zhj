@@ -22,7 +22,9 @@ function PageHero({
         <div className={styles.top}>
           {eyebrow && <span className="eyebrow">{eyebrow}</span>}
         </div>
-        <h1 className={`display ${styles.title}`} style={titleStyle}>{title}</h1>
+        {title && (
+          <h1 className={`display ${styles.title}`} style={titleStyle}>{title}</h1>
+        )}
         {subtitle && (
           <p className={styles.subtitle} style={subtitleStyle}>{subtitle}</p>
         )}
