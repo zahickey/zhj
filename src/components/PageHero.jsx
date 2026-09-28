@@ -13,10 +13,11 @@ function PageHero({
   radius = 'top',
   titleStyle,
   subtitleStyle,
+  className = '',
   children,
 }) {
   return (
-    <section className={`band band--${radius} band--gradient-${tone} ${styles.hero}`}>
+    <section className={`band band--${radius} band--gradient-${tone} ${styles.hero} ${className}`}>
       <div className="container">
         <hr className="hairline" />
         <div className={styles.top}>

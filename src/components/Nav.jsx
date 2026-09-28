@@ -13,6 +13,7 @@ const NAV_ITEMS = [
     children: [
       { label: 'Senior Thesis', to: '/projects/senior-thesis' },
       { label: 'DNN for Lymphoma', to: '/projects/dnn-lymphoma' },
+      { label: 'Betty', to: '/projects/betty' },
     ],
   },
 ]
