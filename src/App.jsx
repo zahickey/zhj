@@ -6,6 +6,7 @@ import CV from './pages/about/CV.jsx'
 import SeniorThesis from './pages/projects/SeniorThesis.jsx'
 import DnnLymphoma from './pages/projects/DnnLymphoma.jsx'
 import Betty from './pages/projects/Betty.jsx'
+import Videos from './pages/projects/Videos.jsx'
 import DecisionMaking from './pages/algorithms/DecisionMaking.jsx'
 import NeurIPS from './pages/algorithms/NeurIPS.jsx'
 import Other from './pages/algorithms/Other.jsx'
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects/senior-thesis" element={<SeniorThesis />} />
         <Route path="/projects/dnn-lymphoma" element={<DnnLymphoma />} />
         <Route path="/projects/betty" element={<Betty />} />
+        <Route path="/projects/videos" element={<Videos />} />
         <Route path="/algorithms/decision-making" element={<DecisionMaking />} />
         <Route path="/algorithms/neurips" element={<NeurIPS />} />
         <Route path="/algorithms/other" element={<Other />} />

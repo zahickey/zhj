@@ -14,6 +14,7 @@ const NAV_ITEMS = [
       { label: 'Senior Thesis', to: '/projects/senior-thesis' },
       { label: 'DNN for Lymphoma', to: '/projects/dnn-lymphoma' },
       { label: 'Betty', to: '/projects/betty' },
+      { label: 'Videos', to: '/projects/videos' },
     ],
   },
 ]
