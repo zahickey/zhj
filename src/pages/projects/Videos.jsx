@@ -48,7 +48,7 @@ function Videos() {
               intuitive way.
             </p>
 
-            <h2 className={`display ${styles.h2}`}>All videos</h2>
+            <h2 className={`display ${styles.h2}`}>Videos</h2>
             {VIDEOS.length === 0 ? (
               <p className={styles.paragraph}>
                 The first videos are on their way &mdash; check back soon, or follow along on{' '}
