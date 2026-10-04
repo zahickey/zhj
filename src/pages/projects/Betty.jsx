@@ -7,6 +7,7 @@ import pmLogImg from '../../assets/images/betty/pm-log.png'
 import labPhotoImg from '../../assets/images/betty/lab-photo.png'
 
 const BETTY_URL = 'https://bettydialysis.com'
+const BETTY_DEMO_URL = 'https://www.bettydialysis.com/demo'
 
 function Figure({ src, alt, caption, phone = false }) {
   return (
@@ -95,6 +96,9 @@ function Betty() {
         <div className={styles.linkRow}>
           <a className="pill" href={BETTY_URL} target="_blank" rel="noreferrer">
             bettydialysis.com
+          </a>
+          <a className="pill" href={BETTY_DEMO_URL} target="_blank" rel="noreferrer">
+            Try the demo
           </a>
         </div>
         <img className={styles.logo} src={bettyLogo} alt="Betty logo" />
@@ -224,6 +228,9 @@ function Betty() {
             <div className={styles.linkRow}>
               <a className="pill" href={BETTY_URL} target="_blank" rel="noreferrer">
                 Visit bettydialysis.com
+              </a>
+              <a className="pill" href={BETTY_DEMO_URL} target="_blank" rel="noreferrer">
+                Try the demo
               </a>
             </div>
           </article>
