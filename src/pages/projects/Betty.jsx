@@ -97,9 +97,6 @@ function Betty() {
           <a className="pill" href={BETTY_URL} target="_blank" rel="noreferrer">
             bettydialysis.com
           </a>
-          <a className="pill" href={BETTY_DEMO_URL} target="_blank" rel="noreferrer">
-            Try the demo
-          </a>
         </div>
         <img className={styles.logo} src={bettyLogo} alt="Betty logo" />
       </PageHero>
@@ -127,6 +124,12 @@ function Betty() {
               alt="Betty patient dashboard showing latest weight, blood pressure, notes logged, lab results logged, and weight/blood pressure trend charts over several months"
               caption="The patient dashboard — nightly metrics, notes, and lab results, all as one trend line. (Sample data.)"
             />
+
+            <div className={styles.linkRow}>
+              <a className="pill" href={BETTY_DEMO_URL} target="_blank" rel="noreferrer">
+                Try the demo
+              </a>
+            </div>
 
             <div className={styles.featureColumns}>
               <div>
