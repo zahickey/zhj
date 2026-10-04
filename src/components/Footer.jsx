@@ -24,7 +24,13 @@ function Footer() {
             </a>
           </li>
           <li>
-            <span className={styles.comingSoon}>YouTube — coming soon</span>
+            <a
+              href="https://www.youtube.com/channel/UCeW-JAyhWEyUFtx4zd7N8rA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              YouTube
+            </a>
           </li>
         </ul>
 
